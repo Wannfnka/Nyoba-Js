@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <head>
+    <link rel="stylesheet" href="coba.css">
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p id="Text">In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <p id="halo" style="display:none">Hello Madi</p>
+    <script>
+      window.alert('admin datang');
+    </script>
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">off</button>
+
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">on</button>
+
+    <button onclick="document.getElementById('nyan').src='garry.gif'">Garry</button>
+
+    <img id="nyan" src="pink.gif" style="width:100px">
+
+    <button onclick="document.getElementById('nyan').src='time.gif'">Adventure Time</button><br>
+
+    <button onclick="document.getElementById('Text').style.fontSize='60px'">Change Size</button><br>
+    <button type="button" onclick="document.getElementById('Text').style.display='none'">Hilang</button><br>
+    <button type="button" onclick="document.getElementById('halo').style.display='block'">Welcome</button><br>
+    <button onclick="window.print()">Print this page</button><br>
+
+  </head>
+
+  <body>
+
+    <button onclick="bukaPopup()">Tampilkan Popup</button>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2>Selamat Datang!</h2>
+        <img src="time.gif" alt="Contoh Gambar">
+        <p>Cihuyyyyy.</p>
+        <button class="close-btn" onclick="tutupPopup()">Tutup</button>
+      </div>
+    </div>
+
+    <script>
+      function bukaPopup() {
+        document.getElementById("popup").style.display = "flex";
+      }
+      function tutupPopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+
+    </script>
+
+  </body>
+
+</html>
